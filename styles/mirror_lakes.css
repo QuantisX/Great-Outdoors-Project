@@ -5,25 +5,32 @@ ul{
 
 
 .flex-container{
-
-}
-
-.flex-item{
-
-}
+    display: flex;
+    align-items: flex-start;
 
 
+/* .flex-item{
+  
+} */
 
-#whole-body{
+
+
+/* #whole-body{
     
-}
+} */
 
 #header-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#title-bar{
 
 }
 
 #links-bar{
-
+   
 }
 
 #home-link{
@@ -44,11 +51,11 @@ ul{
 }
 
 #ads-sidebar{
-
+    
 }
 
 #main-body{
-
+    
 }
 
 #gallery-summary{
