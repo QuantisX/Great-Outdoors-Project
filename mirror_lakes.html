@@ -8,16 +8,22 @@
 </head>
 <body>
 
-<div>
+<div class="flex-container" id="whole-body">
     <div class="flex-container" id="header-bar"> <!-- this divider holds two horizontal bars: top is name and logo, bottom is a row of links-->
         
         <!-- a logo will go here -->
         <h1>Great Outdoors!</h1>
 
-        <div class="flex-container">
-            <a href="index.html">Home</a>
-            <a href="">Permits</a>
-            <a href="">Locations</a> <!-- I want this to be a drop down -->
+        <div class="flex-container" id="links-bar">
+            <div class="flex-item" id="home=link">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="flex-item" id="permits-link">
+                <a href="">Permits</a>
+            </div>
+            <div class="flex-item" id="locations-links">
+                <a href="">Locations</a> <!-- I want this to be a drop down -->
+            </div>
         </div>
 
     </div>
@@ -35,7 +41,7 @@
             <div class="flex-container" id="gallery-summary"> <!-- Horizontal Box 1; contains image gallery (static image for now) and location details-->
 
                 <div class="flex-item" id="image-gallery">
-                    <img src = "images/mirror_lakes_1.jpeg" alt="Lake" onmouseover="showAlt(this)" onmouseout="hideAlt(this)">
+                    <img src = "images/mirror_lakes_1.jpeg" alt="Lake" onmouseover="showAlt(this)" onmouseout="hideAlt(this)" id="gallery">
                     <figcaption>Don't fall In</figcaption>
                 </div>
 
@@ -44,7 +50,7 @@
                     <h2>Explore the magical Mirror Lakes!</h2>
                     <br>
 
-                    <p id="alttext" style="font-size:20px"> 
+                    <p id="stats" style="font-size:20px"> 
                         <u>Statistics:</u> 
                         <ul>
                             <li>Coordinates: 46.7957, -121.8415</li>
@@ -56,7 +62,7 @@
                         </ul>        
                     <p>
 
-                    <p id="alttext" style="font-size:20px"> 
+                    <p id="summary" style="font-size:20px"> 
                         Enjoy all nature has to offer in this magical landscape rife with mountain views, lakes, meadows, and wildlife! Spend a weekend camping here and enjoy activities like hiking, birdwatching, paddleboarding, and swimming. Seasonal activities include Huckleberry picking, fishing for Rainbow trout, and wildflower viewing. Pets welcome on a leash. 
                     <p>
 
@@ -65,13 +71,13 @@
         
             </div>
             
-            <div class="flex-container" id-="maps-comments">
+            <div class="flex-container" id-="maps-comments"> <!-- contains maps and comments flex boxes-->
 
-                <div class="flex-item" id="maps">
+                <div class="flex-item" id="maps"> <!-- Maps integration with direction routing -->
                     <p id="alttext" style="font-size:20px"> Holding Space for Maps integration </p>
                 </div>
 
-                <div class="flex-item" id="comments">
+                <div class="flex-item" id="comments"> <!-- a user can upload a comment to a location's page -->
                     <p id="alttext" style="font-size:20px"> Holding Space for Comment Integration</p>
                 </div>
 
