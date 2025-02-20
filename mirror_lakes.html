@@ -9,31 +9,41 @@
 <body>
 
 <div>
-    <div class="flex-container"> <!-- this divider holds two horizontal bars: top is name and logo, bottom is a row of links-->
+    <div class="flex-container" id="header-bar"> <!-- this divider holds two horizontal bars: top is name and logo, bottom is a row of links-->
+        
         <!-- a logo will go here -->
         <h1>Great Outdoors!</h1>
+
         <div class="flex-container">
-            <!-- I want this to be a drop down -->
-            <a href="">Home</a>
+            <a href="index.html">Home</a>
             <a href="">Permits</a>
-            <a href="">Locations</a>
+            <a href="">Locations</a> <!-- I want this to be a drop down -->
         </div>
+
     </div>
-    <div class="flex-container">
-        <div class="flex-container"> <!--this is a vertical bar containing ads in a column. sits below links bar-->
+
+    <div class="flex-container" id="ads-body">
+
+        <div class="flex-container" id="ads-sidebar"> <!--this is a vertical bar containing ads in a column. sits below links bar-->
             <!-- sidebar for ads -->
             <!-- I want this to be collapsable -->
+            <p>Holding Space for Ads</p>
         </div>
     
-        <div class="flex-container"> <!-- this begins to the right of the ads bar and below the links bar, contains two horizontal flex boxes -->
-            <div class="flex-container"> <!-- Horizontal Box 1; contains image gallery (static image for now) and location details-->
-                <div class="flex-item">
+        <div class="flex-container" id="main-body"> <!-- this begins to the right of the ads bar and below the links bar, contains two horizontal flex boxes -->
+
+            <div class="flex-container" id="gallery-summary"> <!-- Horizontal Box 1; contains image gallery (static image for now) and location details-->
+
+                <div class="flex-item" id="image-gallery">
                     <img src = "images/mirror_lakes_1.jpeg" alt="Lake" onmouseover="showAlt(this)" onmouseout="hideAlt(this)">
                     <figcaption>Don't fall In</figcaption>
                 </div>
-                <div class="flex-item">
+
+                <div class="flex-item" id="summary-body"> <!-- holds location summary-->
+
                     <h2>Explore the magical Mirror Lakes!</h2>
                     <br>
+
                     <p id="alttext" style="font-size:20px"> 
                         <u>Statistics:</u> 
                         <ul>
@@ -45,23 +55,34 @@
                             <li>Best Time: July through October, closes seasonally due to snow</li>
                         </ul>        
                     <p>
-                    <p id="alttext" style="font-size:20px"> Enjoy all nature has to offer in this magical landscape rife with mountain views, lakes, meadows, and wildlife! Spend a weekend camping here and enjoy activities like hiking, birdwatching, paddleboarding, and swimming. Seasonal activities include Huckleberry picking,  fishing for Rainbow trout, and wildflower viewing. Pets welcome on a leash. <p>
+
+                    <p id="alttext" style="font-size:20px"> 
+                        Enjoy all nature has to offer in this magical landscape rife with mountain views, lakes, meadows, and wildlife! Spend a weekend camping here and enjoy activities like hiking, birdwatching, paddleboarding, and swimming. Seasonal activities include Huckleberry picking, fishing for Rainbow trout, and wildflower viewing. Pets welcome on a leash. 
+                    <p>
 
                 </div>
+            
+        
             </div>
             
-    
+            <div class="flex-container" id-="maps-comments">
+
+                <div class="flex-item" id="maps">
+                    <p id="alttext" style="font-size:20px"> Holding Space for Maps integration </p>
+                </div>
+
+                <div class="flex-item" id="comments">
+                    <p id="alttext" style="font-size:20px"> Holding Space for Comment Integration</p>
+                </div>
+
             </div>
-        
-    
-    
+                  
         </div>
 
     </div>
    
 
-    <p id="alttext" style="font-size:20px"> Holding Space for Maps integration </p>
-    <p id="alttext" style="font-size:20px"> Holding Space for Comment Integration <p>
+    
 
 <!-- <p id="alttext" style="font-size:20px"><a href="https://www.wta.org/go-outside/passes" > Where to get a Permit </a>
     <br>
