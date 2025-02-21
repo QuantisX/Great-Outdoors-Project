@@ -5,34 +5,50 @@ ul{
     grid-template-columns: repeat(3, 1fr);
 }
 
+body {
+    background-color: #cfdfda;
+  }
+  
+h1 {
+color: darkblue;
+}
+
+img{
+border: 15px #4a6c2f;
+}
 
 
+figcaption{
+text-align: left;
+color:black;
+font-style: italic;
+font-size: 15px;
+}
 
+#pine-tree-ad{
+    max-height: 60px;
+}
 
 /*End of Base Styling*/
 
 .flex-container{
     display: flex;
-    /* flex-direction: column;  */
 }
 
 .flex-item{
     border: 1px solid black;
 }
 
-/* #whole-body{
-} */
 
 /* #header-bar{
 } */
 
 .title-bar{
-    flex-direction: row;
+    
 }
 
 .links-bar-item{
-    display: flex;
-    flex-direction: row; 
+    display: flex; 
     justify-content: center;
 }
 
