@@ -1,12 +1,12 @@
-ul{
+ ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-
+/* 
 .flex-container{
     display: flex;
-    align-items: flex-start;
+    align-items: flex-start;  */
 
 
 /* .flex-item{
@@ -19,11 +19,11 @@ ul{
     
 } */
 
-#header-bar{
+/* #header-bar{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+} */
 
 /* #title-bar{
 
