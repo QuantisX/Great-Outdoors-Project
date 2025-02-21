@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Welcome to the Great Outdoors!</title>
-<link rel="stylesheet" type="text/css" href="styles/branchlevel.css">
+<!-- <link rel="stylesheet" type="text/css" href="styles/branchlevel.css"> -->
 <link rel="stylesheet" type="text/css" href="styles/mirror_lakes.css">
 <script src="scripts/myscripts.js"></script>
 </head>
@@ -11,24 +11,19 @@
 <div id="whole-body">
     <div class="flex-container" id="header-bar"> <!-- this divider holds two horizontal bars: top is name and logo, bottom is a row of links-->
         
-        <div class="flex-item" id="title-bar">
-            <!-- a logo will go here -->
-            <h1>Great Outdoors!</h1>
+        <div class="title-bar">
+            <div class="flex-item" id="pine_logo">
+                <img src = "images/pine_tree.png" id="pine_tree">
+            </div>
+            <div class="flex-item" id="outdoors_title">
+                <h1>Great Outdoors!</h1>
+            </div>
         </div>
         
        
-
-        <div class="flex-item" id="links-bar"> 
-            <div class="flex-container" id="links-container">
-                <div class="flex-item" id="home=link">
-                    <a href="index.html">Home</a>
-                </div>
-                <div class="flex-container" id="permits-link">
-                    <a href="">Permits</a>
-                </div>
-                <div class="flex-item" id="locations-links">
-                    <a href="">Locations</a> <!-- I want this to be a drop down -->
-                </div>
+        <div class="links-bar-item" id="links-bar"> 
+            <div class="links" >
+                <a href="index.html">Home</a>  |  <a href="">Permits</a>  |  <a href="">Locations</a> <!-- I want this to be a drop down -->  
             </div>
         </div>
         

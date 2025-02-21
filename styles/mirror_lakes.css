@@ -1,93 +1,90 @@
- ul{
+/*Base Styling*/
+
+ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-/* 
+
+
+
+
+/*End of Base Styling*/
+
 .flex-container{
     display: flex;
-    align-items: flex-start;  */
+    /* flex-direction: column;  */
+}
 
-
-/* .flex-item{
-  
-} */
-
-
+.flex-item{
+    border: 1px solid black;
+}
 
 /* #whole-body{
-    
 } */
 
 /* #header-bar{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 } */
 
-/* #title-bar{
-
+.title-bar{
+    flex-direction: row;
 }
 
-#links-bar{
-   
+.links-bar-item{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
 }
 
+#pine_tree{
+    max-height: 75px;
+}
+
+/*
 #home-link{
-
 }
 
 #permits-link{
-
 }
 
 #locations-links{
-
 }
 
 
 #ads-body{
-
 }
 
 #ads-sidebar{
-    
 }
 
 #main-body{
-    
 }
 
 #gallery-summary{
-
-}
+}*/
 
 #image-gallery{
-
+    min-height: 15%;
+    max-height: 100%;
+    min-width: 15%;
+    max-width: 100%;    
 }
 
+/*
 #summary-body{
-
 }
 
 #stats{
-
 }
 
 #summary{
-
-
-
 }
 
 #maps-comments{
-
 }
 
 #maps{
-
 }
 
 #comments{
-
 } */

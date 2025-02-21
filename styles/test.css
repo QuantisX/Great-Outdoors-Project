@@ -1,5 +1,17 @@
-
-body {
+/* BASE STYLES */
+:root {
+    --clr-dark: #0f172a;
+    --clr-light: #f1f5f9;
+    --clr-accent: #e11d48;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -31,4 +43,10 @@ body {
     border: 10px solid var(--clr-accent);
     border-radius: 10px;
   }
-
+  
+  /* END OF BASE STYLES */
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
