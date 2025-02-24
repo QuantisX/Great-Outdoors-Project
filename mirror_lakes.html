@@ -9,56 +9,45 @@
 <body>
 
 <div id="whole-body">
-    <div class="flex-container" id="header-bar"> <!-- this divider holds two horizontal bars: top is name and logo, bottom is a row of links-->
-        
+    <div id="header-bar"> <!-- this divider holds two horizontal bars: top is name and logo, bottom is a row of links-->      
         <div class="title-bar">
-            <div class="flex-item" id="pine_logo">
-               <a href="index.html"> <img src = "images/pine_tree.png" id="pine_tree">  <h1>Great Outdoors!</h1></a>
+            <div class="flex-item pine-logo" id="pine_logo">
+                <div>
+                    <a href="index.html"> <img src = "images/pine_tree.png" id="pine_tree"></a>  
+                </div>
+                <div>
+                    <h1>Great Outdoors!</h1>
+                </div>
+               
             </div>
-            <div class="links-bar-item" id="links-bar"> 
+
+            <div class="links-bar-item flex-item" id="links-bar"> 
                 <div class="links" >
                     <a href="index.html">Home</a>  |  <a href="">Permits</a>  |  <a href="">Locations</a> <!-- I want this to be a drop down -->  
                 </div>
             </div>
-            
-        
         </div>
-        
-       
-        
-
     </div>
 
     <div class="flex-container" id="ads-body">
-
         <div class="flex-item" id="ads-sidebar"> <!--this is a vertical bar containing ads in a column. sits below links bar-->
             <!-- sidebar for ads -->
             <!-- I want this to be collapsable -->
             <p>Holding Space for Ads</p>
-            
                 <a href="index.html"> <img src = "images/pine_tree.png" id="pine-tree-ad"></a>
-            
-             
-             <br>
-
-             
+                <br>
                 <a href="index.html"> <img src = "images/pine_tree.png" id="pine-tree-ad"></a>
-             
-
-             <br>
-
-            
+                <br>
                 <a href="index.html"> <img src = "images/pine_tree.png" id="pine-tree-ad"></a>
-           
         </div>
     
         <div class="flex-item" id="main-body"> <!-- this begins to the right of the ads bar and below the links bar, contains two horizontal flex boxes -->
 
-            <div class="flex-item" id="gallery-summary"> <!-- Horizontal Box 1; contains image gallery (static image for now) and location details-->
+            <div class="flex-container" id="gallery-summary"> <!-- Horizontal Box 1; contains image gallery (static image for now) and location details-->
 
                 <div class="flex-item" id="image-gallery">
                     <img src = "images/mirror_lakes_1.jpeg" alt="Lake" id="gallery">
-                    <figcaption>Don't fall In</figcaption>
+                    <figcaption>Don't fall in!</figcaption>
                 </div>
 
                 <div class="flex-item" id="summary-body"> <!-- holds location summary-->
