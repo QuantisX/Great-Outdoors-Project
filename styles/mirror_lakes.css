@@ -1,9 +1,21 @@
 /*Base Styling*/
 
-ul{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.wrapper {
+  display: flex;
+  justify-content: center;
 }
+
+ul{
+    max-width: 90%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+  
+    width: 50%;
+  }
 
 body {
     background-color: #cfdfda;    
@@ -87,6 +99,7 @@ font-size: 15px;
 
 #gallery{
     height: 400px; 
+    padding-top: 30px;
 }
 
 /*
