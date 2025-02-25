@@ -6,8 +6,8 @@ ul{
 }
 
 body {
-    background-color: #cfdfda;
-  }
+    background-color: #cfdfda;    
+}
   
 h1 {
 color: darkblue;
@@ -36,7 +36,8 @@ font-size: 15px;
 }
 
 .flex-item{
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    padding: 5px;
 }
 
 .pine-logo{
