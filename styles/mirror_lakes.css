@@ -1,8 +1,8 @@
 /*Base Styling*/
 
 .wrapper {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 ul{
@@ -20,26 +20,39 @@ li {
 body {
     background-color: #cfdfda;    
 }
+
+#summary-body {
+    color:#173042
+}
   
 h1 {
-color: darkblue;
+    color: #236477;
+}
+
+h2 {
+    color: #236477;
+}
+
+h3 {
+    color: #236477
 }
 
 img{
-border: 15px #4a6c2f;
+    border: 15px #4a6c2f;
 }
 
-
 figcaption{
-text-align: left;
-color:black;
-font-style: italic;
-font-size: 15px;
+    text-align: left;
+    color:black;
+    font-style: italic;
+    font-size: 15px;
 }
 
 #pine-tree-ad{
     max-height: 60px;
 }
+
+
 
 /*End of Base Styling*/
 
@@ -58,9 +71,6 @@ font-size: 15px;
     justify-content: center;
 }
 
-/* #header-bar{
-} */
-
 .title-bar{
     
 }
@@ -74,49 +84,7 @@ font-size: 15px;
     max-height: 75px;
 }
 
-/*
-#home-link{
-}
-
-#permits-link{
-}
-
-#locations-links{
-}
-
-
-#ads-body{
-}
-
-#ads-sidebar{
-}
-
-#main-body{
-}
-
-#gallery-summary{
-}*/
-
 #gallery{
     height: 400px; 
     padding-top: 30px;
 }
-
-/*
-#summary-body{
-}
-
-#stats{
-}
-
-#summary{
-}
-
-#maps-comments{
-}
-
-#maps{
-}
-
-#comments{
-} */
