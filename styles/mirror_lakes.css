@@ -18,13 +18,14 @@ li {
   }
 
 body {
-    background-color: #cfdfda;    
+    background-color: #cfdfda;  
+    font-family: "Helvetica";  
 }
 
 #summary-body {
-    color:#173042
+    color:#173042;
 }
-  
+
 h1 {
     color: #236477;
 }
