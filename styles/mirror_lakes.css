@@ -1,0 +1,91 @@
+/*Base Styling*/
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    max-width: 90%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+  
+    width: 50%;
+  }
+
+body {
+    background-color: #cfdfda;  
+    font-family: "Helvetica";  
+}
+
+#summary-body {
+    color:#173042;
+}
+
+h1 {
+    color: #236477;
+}
+
+h2 {
+    color: #236477;
+}
+
+h3 {
+    color: #236477
+}
+
+img{
+    border: 15px #4a6c2f;
+}
+
+figcaption{
+    text-align: left;
+    color:black;
+    font-style: italic;
+    font-size: 15px;
+}
+
+#pine-tree-ad{
+    max-height: 60px;
+}
+
+
+
+/*End of Base Styling*/
+
+.flex-container{
+    display: flex;
+}
+
+.flex-item{
+    /* border: 1px solid black; */
+    padding: 5px;
+}
+
+.pine-logo{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+}
+
+.title-bar{
+    
+}
+
+.links-bar-item{
+    display: flex; 
+    justify-content: center;
+}
+
+#pine_tree{
+    max-height: 75px;
+}
+
+#gallery{
+    height: 400px; 
+    padding-top: 30px;
+}

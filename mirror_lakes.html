@@ -2,29 +2,105 @@
 <html>
 <head>
 <title>Welcome to the Great Outdoors!</title>
-<link rel="stylesheet" type="text/css" href="styles/branchlevel.css">
+<!-- <link rel="stylesheet" type="text/css" href="styles/branchlevel.css"> -->
+<link rel="stylesheet" type="text/css" href="styles/mirror_lakes.css">
 <script src="scripts/myscripts.js"></script>
 </head>
 <body>
 
-<h1>Explore the magical Mirror Lakes!</h1>
+<div id="whole-body">
+    <div id="header-bar"> <!-- this divider holds two horizontal bars: top is name and logo, bottom is a row of links-->      
+        <div class="title-bar">
+            <div class="flex-item pine-logo" id="pine_logo">
+                <div>
+                    <a href="index.html"> <img src = "images/pine_tree.png" id="pine_tree"></a>  
+                </div>
+                <div>
+                    <h1>Great Outdoors!</h1>
+                </div>
+               
+            </div>
 
-<img src = "images/mirror_lakes_1.jpeg" alt="Lake" onmouseover="showAlt(this)" onmouseout="hideAlt(this)">
-<figcaption>Don't fall In</figcaption>
-<p id="alttext" style="font-size:20px"> 
-    <u>Statistics:</u> 
-    <ul>
-        <li>Coordinates: 46.7957, -121.8415</li>
-        <li>Hike Length: 14 miles round trip</li>
-        <li>Elevation Gain: 3,900 ft</li>
-        <li>Highest Point: 5,400 ft</li>
-        <li>Difficulty Rating: Hard</li>
-        <li>Best Time: July through October, closes seasonally due to snow</li>
-    </ul>   
+            <div class="links-bar-item flex-item" id="links-bar"> 
+                <div class="links" >
+                    <a href="index.html" title="Home Link">Home</a>  |  <a href="" title="Permits Link">Permits</a>  |  <a href="" title="Locations Link">Locations</a> <!-- I want this to be a drop down -->  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-container" id="ads-body">
+        <div class="flex-item" id="ads-sidebar"> <!--this is a vertical bar containing ads in a column. sits below links bar-->
+            <!-- sidebar for ads -->
+            <!-- I want this to be collapsable -->
+            <p>Holding Space for Ads</p>
+                <a href="index.html"> <img src = "images/pine_tree.png" id="pine-tree-ad"></a>
+                <br>
+                <a href="index.html"> <img src = "images/pine_tree.png" id="pine-tree-ad"></a>
+                <br>
+                <a href="index.html"> <img src = "images/pine_tree.png" id="pine-tree-ad"></a>
+        </div>
+    
+        <div class="flex-item" id="main-body"> <!-- this begins to the right of the ads bar and below the links bar, contains two horizontal flex boxes -->
+
+            <div class="flex-container" id="gallery-summary"> <!-- Horizontal Box 1; contains image gallery (static image for now) and location details-->
+
+                <div class="flex-item" id="image-gallery">
+                    <img src = "images/mirror_lakes_1.jpeg" alt="Lake" title="Lake" id="gallery">
+                    <figcaption>Don't fall in!</figcaption>
+                </div>
+
+                <div class="flex-item" id="summary-body"> <!-- holds location summary-->
+                    <div class="flex-item" id="mirror-title">
+                        <h2>Explore the magical Mirror Lakes!</h2>
+                    
+                        <p id="stats" style="font-size:20px"> 
+                        <h3>Statistics</h3>
+                        <div class="wrapper">
+                            <ul>
+                                <li>Coordinates: 46.7957, -121.8415</li>
+                                <li>Hike Length: 14 miles round trip</li>
+                                <li>Elevation Gain: 3,900 ft</li>
+                                <li>Highest Point: 5,400 ft</li>
+                                <li>Difficulty Rating: Hard</li>
+                                <li>Best Time: July through October, closes seasonally due to snow</li>
+                            </ul>     
+                        </div>
+                    
+                        <h3>About the Trail</h3>
+                        <p id="summary" style="font-size:20px"> 
+                            Enjoy all nature has to offer in this magical landscape rife with mountain views, lakes, meadows, and wildlife! Spend a weekend camping here and enjoy activities like hiking, birdwatching, paddleboarding, and swimming. Seasonal activities include Huckleberry picking, fishing for Rainbow trout, and wildflower viewing. Pets welcome on a leash. 
+                        <p>
+                    </div>
+                    
+
+                </div>
+            
         
-<p>
+            </div>
+            
+            <div class="flex-container" id-="maps-comments"> <!-- contains maps and comments flex boxes-->
 
-<p id="alttext" style="font-size:20px"><a href="https://www.wta.org/go-outside/passes" > Where to get a Permit </a>
+                <div class="flex-item" id="maps"> <!-- Maps integration with direction routing -->
+                    <p id="alttext" style="font-size:20px"> Holding Space for Maps integration </p>
+                </div>
+
+                <br>
+
+                <div class="flex-item" id="comments"> <!-- a user can upload a comment to a location's page -->
+                    <p id="alttext" style="font-size:20px"> Holding Space for Comment Integration</p>
+                </div>
+
+            </div>
+                  
+        </div>
+
+    </div>
+   
+
+    
+
+<!-- <p id="alttext" style="font-size:20px"><a href="https://www.wta.org/go-outside/passes" > Where to get a Permit </a>
     <br>
     <u style="font-size:18px;">Prices</u>
     <ul>
@@ -37,21 +113,15 @@
         </li>
         <li>Annual Pass to single park: $55</li>
     </ul>
-<p>
-
-<p id="alttext" style="font-size:20px"> Enjoy all nature has to offer in this magical landscape rife with mountain views, lakes, meadows, and wildlife! Spend a weekend camping here and enjoy activities like hiking, birdwatching, paddleboarding, and swimming. Seasonal activities include Huckleberry picking,  fishing for Rainbow trout, and wildflower viewing. Pets welcome on a leash. <p>
-
-<p id="alttext" style="font-size:20px"> Holding Space for Maps integration </p>
-<p id="alttext" style="font-size:20px"> Holding Space for Gallery and Comment Integration <p>
-
-
-<ul>
+<p> -->
+<!-- <ul>
 <li><a href="index.html">Table of Contents</a></li>
 <li><a href="">Location 2</a></li>
 <li><a href="">Location 3</a></li>
 <li><a href="">Location 4</a></li>
 <li><a href="https://www.wta.org/go-outside/passes">Park Permit Purchase</a></li>
-</ul>
+</ul> -->
 
+</div>
 </body>
 </html>
