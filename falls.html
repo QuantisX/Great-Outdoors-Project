@@ -1,22 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Behold Nature's Beauty!</title>
-<link rel="stylesheet" type="text/css" href="styles/branchlevel.css">
-<script src="scripts/myscripts.js"></script>
-</head>
-<body >
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/icon.png">
+        
+        <link rel="stylesheet" href="styles/navigationBar.css">
+        <link rel="stylesheet" href="styles/homepage.css">
+        <link rel="stylesheet" href="styles/dropdown.css">
+        <link rel="stylesheet" type="text/css" href="styles/branchlevel.css">
+        <script src="scripts/myscripts.js"></script>
+        <title>Behold Nature's Beauty!</title>
 
-<h1>The Sparkling Waters</h1>
+        <style>
+            body{
+                background-image: url(images/waterfallBlur.jpg);
+            }
+            main img{
+                border:10px solid green;
+            }
+        </style>
+    </head>
 
-<img src = "images/waterfall.jpg" alt="Ranger Falls" onmouseover="showAlt(this)" onmouseout="hideAlt(this)">
-<figcaption>Take in the Scenery</figcaption>
+    <body >
 
-<p id="alttext" style="font-size:50px"> <p>
+        <header>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <h1>The Sparkling Waters</h1>
+        </header>
+        <nav class="navBar">     
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Permits.html" target="_blank">Permits</a></li>
+                <li><div class="dropDown">
+                    <button>Locations</button>
+                    <div class="content">
+                        <a href="mountain.html">Climb the Mountain</a>
+                        <a href="forest.html">Wander the Forest</a>
+                        <a href="falls.html">See the Falls</a>
+                        <a href="ferry.html">Ride the Ferry</a>
+                        <a href="lake.html">Walk Around the Lake</a>
+                        <a href="park.html">Read in the Park</a>
+                    </div>
+                </div></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+        </nav>
 
-<ul>
-<li><a href="index.html">Table of Contents</a></li>
-</ul>
+        <main>
+            <img src = "images/waterfall.jpg" alt="Ranger Falls" onmouseover="showAlt(this)" onmouseout="hideAlt(this)">
+            <figcaption>Take in the Scenery</figcaption>
 
-</body>
+            <p id="alttext" style="font-size:50px"> <p>
+
+            <ul>
+            <li><a href="index.html">Table of Contents</a></li>
+            </ul>
+        </main>
+
+    </body>
 </html>

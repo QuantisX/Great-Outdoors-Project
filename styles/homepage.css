@@ -1,0 +1,43 @@
+header {
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: EmblemaOne;
+    margin-right: 40%;
+    padding: 20px;
+    color: rgb(0, 14, 85);
+}
+
+@font-face {
+    font-family: EmblemaOne;
+    src: url(fonts/EmblemaOne-Regular.ttf);
+}
+
+main{
+    margin:20px;
+}
+
+header img{
+    width: 200px;
+    height: auto;
+    float: left;
+    border: 6px solid green;
+    border-radius: 12px;
+}
+
+footer {
+    background-color: rgb(172, 181, 184);
+    text-align: center;
+    padding: 25px;
+    display: block;
+    clear: both;
+}
+
+body {
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+

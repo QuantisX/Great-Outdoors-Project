@@ -1,0 +1,55 @@
+.dropDown {
+    display:inline-block;
+    height: auto;
+}
+@font-face {
+    font-family: EmblemaOne;
+    src: url(fonts/EmblemaOne-Regular.ttf);
+}
+
+.dropDown button{
+    background-color: rgba(7, 50, 72, 0);
+    color: rgb(2, 48, 48);
+    font-size: 17px;
+    font-family: EmblemaOne;
+    font-weight: bolder;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 3px;
+    margin-left: 40px;
+    margin-right: 100px;
+    height: 40px;
+    width: auto;
+    border-radius: 12px;
+}
+.dropDown a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+}
+
+.dropDown .content {
+    display: none;
+    position: absolute;
+    background-color: rgba(7, 50, 72, 0.412);
+    min-width: 100px;
+    height: auto; 
+    border-radius: 12px;
+    
+}
+.dropDown:hover .content{
+    display: block;
+}
+
+.dropDown button:hover{
+    background-color: rgb(6, 30, 68);
+    color:rgb(211, 228, 243);
+}
+
+.content a:hover{
+    background-color: rgb(6, 30, 68);
+    color: rgb(210, 213, 216);
+    border-radius: 12px;
+}
