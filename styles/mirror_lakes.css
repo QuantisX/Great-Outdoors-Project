@@ -38,10 +38,6 @@ h3 {
     color: #236477
 }
 
-img{
-    border: 15px #4a6c2f;
-}
-
 figcaption{
     text-align: left;
     color:black;
@@ -88,4 +84,88 @@ figcaption{
 #gallery{
     height: 400px; 
     padding-top: 30px;
+}
+
+/* Image Gallery Styling */
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+.slider-wrapper {
+	position: relative;
+}
+
+.slider {
+	--slide-width: clamp(320px, 75vw, 800px);
+	--slide-height: clamp(240px, 75vh, 600px);
+
+	display: grid;
+	grid-auto-flow: column;
+	scroll-snap-type: x mandatory;
+	max-width: var(--slide-width);
+	border: 3px solid #4a6c2f;
+	box-shadow: 0 2px 15px rgba(#000, 0.2), 0 2px 20px rgba(#000, 0.25);
+	overflow-y: hidden;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+.slide {
+	scroll-snap-align: start;
+	width: var(--slide-width);
+	height: var(--slide-height);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+.caption-div {
+	color: #236477;
+	letter-spacing: 0.5px;
+    justify-self: center;
+}
+
+/* Maps Styling */
+
+#maps {
+    border: 3px solid #4a6c2f;
+}
+
+/* Comment Styling */
+
+#respond {
+    margin-top: 40px;
+}
+
+#respond input[type='text'],
+#respond input[type='email'],
+#respond textarea {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+
+    line-height: 1.4em;
 }
