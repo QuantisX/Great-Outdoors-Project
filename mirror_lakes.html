@@ -1,57 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="images/icon.png">
-    
-    <link rel="stylesheet" href="styles/navigationBar.css">
-    <link rel="stylesheet" href="styles/homepage.css">
-    <link rel="stylesheet" href="styles/dropdown.css">
-    <link rel="stylesheet" type="text/css" href="styles/branchlevel.css">
-    <script src="scripts/myscripts.js"></script>
-    <title>Welcome to the Great Outdoors!</title>
-
-    <style>
-        body{
-            background-image: url(images/lakeBlur.jpg);
-        }
-        main img{
-            border:10px solid green;
-        }
-    </style>
-    <title>Welcome to the Great Outdoors!</title>
-    <!-- <link rel="stylesheet" type="text/css" href="styles/branchlevel.css"> -->
-    <link rel="stylesheet" type="text/css" href="styles/mirror_lakes.css">
-    <script src="scripts/myscripts.js"></script>
+<title>Welcome to the Great Outdoors!</title>
+<!-- <link rel="stylesheet" type="text/css" href="styles/branchlevel.css"> -->
+<link rel="stylesheet" type="text/css" href="styles/mirror_lakes.css">
+<script src="scripts/myscripts.js"></script>
 </head>
 <body>
-    
+
 <div id="whole-body">
-    
-    <header>
-        <a href="index.html"><img src="images/logo.png"></a>
-        <h1>Welcome to the Great Outdoors!</h1>
-    </header>
-    <nav class="navBar">     
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Permits.html" target="_blank">Permits</a></li>
-            <li><div class="dropDown">
-                <button>Locations</button>
-                <div class="content">
-                    <a href="mountain.html">Climb the Mountain</a>
-                    <a href="forest.html">Wander the Forest</a>
-                    <a href="falls.html">See the Falls</a>
-                    <a href="ferry.html">Ride the Ferry</a>
-                    <a href="mirror_lakes.html">Walk Around the Lake</a>
-                    <a href="park.html">Read in the Park</a>
+    <div id="header-bar"> <!-- this divider holds two horizontal bars: top is name and logo, bottom is a row of links-->      
+        <div class="title-bar">
+            <div class="flex-item pine-logo" id="pine_logo">
+                <div>
+                    <a href="index.html"> <img src = "images/pine_tree.png" id="pine_tree" title="Pine Logo"></a>  
                 </div>
-            </div></li>
-            <li><a href="HikingInWashington.html" target="_blank">About Hiking</a></li>
-            <li><a href="Skylineloop.html" target="_blank">Hiking Guide</a></li>
-        </ul>
-    </nav>
+                <div>
+                    <h1>Great Outdoors!</h1>
+                </div>
+               
+            </div>
+
+            <div class="links-bar-item flex-item" id="links-bar"> 
+                <div class="links" >
+                    <a href="index.html" title="Home Link">Home</a>  |  <a href="Permits.html" title="Permits Link">Permits</a>  |  <a href="" title="Locations Link">Locations</a> <!-- I want this to be a drop down -->  
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="flex-container" id="ads-body">
         <div class="flex-item" id="ads-sidebar"> <!--this is a vertical bar containing ads in a column. sits below links bar-->
@@ -70,8 +46,25 @@
             <div class="flex-container" id="gallery-summary"> <!-- Horizontal Box 1; contains image gallery (static image for now) and location details-->
 
                 <div class="flex-item" id="image-gallery">
-                    <img src = "images/mirror_lakes_1.jpeg" alt="Lake" title="Lake" id="gallery">
-                    <figcaption>Don't fall in!</figcaption>
+                    <div class="slider-wrapper">
+                        <div class="slider gallery">
+                            <div id="slide-1" class="slide" style="background-image: url(images/mirror_lakes_1.jpeg);" title="Image 1"></div>
+                    
+                            <div id="slide-2" class="slide" style="background-image: url(images/mirror_lake_2.jpeg);" title="Image 2" ></div>
+                    
+                            <div id="slide-3" class="slide" style="background-image: url(images/mirror_lakes_3.jpeg);" title="Image 3"></div>
+                        </div>
+                    
+                        <div class="dots">
+                            <a href="#slide-1"></a>
+                            <a href="#slide-2"></a>
+                            <a href="#slide-3"></a>
+                        </div>
+                    </div>
+                    <div class="caption-div">
+                        <small class="caption">Use your keyboard arrow keys to navigate photos.</small>
+                    </div>
+                        
                 </div>
 
                 <div class="flex-item" id="summary-body"> <!-- holds location summary-->
@@ -106,13 +99,32 @@
             <div class="flex-container" id-="maps-comments"> <!-- contains maps and comments flex boxes-->
 
                 <div class="flex-item" id="maps"> <!-- Maps integration with direction routing -->
-                    <p id="alttext" style="font-size:20px"> Holding Space for Maps integration </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2703.2781003281475!2d-121.43415392261504!3d47.34796820580005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549a77dfcded2af3%3A0x8ae907cfe06fada0!2sMirror%20Lake%20Trail%2C%20Washington%2098068!5e0!3m2!1sen!2sus!4v1741030102442!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map Display"></iframe>
                 </div>
 
                 <br>
 
                 <div class="flex-item" id="comments"> <!-- a user can upload a comment to a location's page -->
-                    <p id="alttext" style="font-size:20px"> Holding Space for Comment Integration</p>
+                    <div id="respond">
+                        <h3>Leave A Comment</h3>
+
+                        <form action="post_comment.php" method="post" id="commentform">
+                            <label for="comment_author" class="required">Your Name:</label>
+                            <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+                            
+                            <label for="email" class="required">Your Email:</label>
+                            <input type="email" name="email" id="email" value="" tabindex="2" required="required">
+                            
+
+                            <label for="comment" class="required">Your Message:</label>
+                          
+                            <textarea name="comment" id="comment" rows="10" tabindex="4" required="required"></textarea>
+                           
+                            <input type="hidden" name="comment_post_id" value="1" id="comment_post_id" />
+                            <input name="submit" type="submit" value="Submit Comment" />
+                            
+                        </form> 
+                    </div>
                 </div>
 
             </div>
