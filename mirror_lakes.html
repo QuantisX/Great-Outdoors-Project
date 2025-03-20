@@ -69,53 +69,36 @@
 
             <div class="flex-container" id="gallery-summary"> <!-- Horizontal Box 1; contains image gallery (static image for now) and location details-->
 
-                
-                <div class="flex-container" id="gallery-summary"> <!-- Horizontal Box 1; contains image gallery (static image for now) and location details-->
+                <div class="flex-item" id="image-gallery">
+                    <img src = "images/mirror_lakes_1.jpeg" alt="Lake" title="Lake" id="gallery">
+                    <figcaption>Don't fall in!</figcaption>
+                </div>
 
-                    <div class="flex-item" id="image-gallery">
-                        <div class="slider-wrapper">
-                            <div class="slider gallery">
-                                <div id="slide-1" class="slide" style="background-image: url(images/mirror_lakes_1.jpeg);" title="Image 1"></div>
-                        
-                                <div id="slide-2" class="slide" style="background-image: url(images/mirror_lake_2.jpeg);" title="Image 2" ></div>
-                        
-                                <div id="slide-3" class="slide" style="background-image: url(images/mirror_lakes_3.jpeg);" title="Image 3"></div>
-                            </div>
-                        
-                            <div class="dots">
-                                <a href="#slide-1"></a>
-                                <a href="#slide-2"></a>
-                                <a href="#slide-3"></a>
-                            </div>
+                <div class="flex-item" id="summary-body"> <!-- holds location summary-->
+                    <div class="flex-item" id="mirror-title">
+                        <h2>Explore the magical Mirror Lakes!</h2>
+                    
+                        <p id="stats" style="font-size:20px"> 
+                        <h3>Statistics</h3>
+                        <div class="wrapper">
+                            <ul>
+                                <li>Coordinates: 46.7957, -121.8415</li>
+                                <li>Hike Length: 14 miles round trip</li>
+                                <li>Elevation Gain: 3,900 ft</li>
+                                <li>Highest Point: 5,400 ft</li>
+                                <li>Difficulty Rating: Hard</li>
+                                <li>Best Time: July through October, closes seasonally due to snow</li>
+                            </ul>     
                         </div>
-                        <div class="caption-div">
-                            <small class="caption">Use your keyboard arrow keys to navigate photos.</small>
-                        </div>
-                            
+                    
+                        <h3>About the Trail</h3>
+                        <p id="summary" style="font-size:20px"> 
+                            Enjoy all nature has to offer in this magical landscape rife with mountain views, lakes, meadows, and wildlife! Spend a weekend camping here and enjoy activities like hiking, birdwatching, paddleboarding, and swimming. Seasonal activities include Huckleberry picking, fishing for Rainbow trout, and wildflower viewing. Pets welcome on a leash. 
+                        <p>
                     </div>
-    
-                    <div class="flex-item" id="summary-body"> <!-- holds location summary-->
-                        <div class="flex-item" id="mirror-title">
-                            <h2>Explore the magical Mirror Lakes!</h2>
-                        
-                            <p id="stats" style="font-size:20px"> 
-                            <h3>Statistics</h3>
-                            <div class="wrapper">
-                                <ul>
-                                    <li>Coordinates: 46.7957, -121.8415</li>
-                                    <li>Hike Length: 14 miles round trip</li>
-                                    <li>Elevation Gain: 3,900 ft</li>
-                                    <li>Highest Point: 5,400 ft</li>
-                                    <li>Difficulty Rating: Hard</li>
-                                    <li>Best Time: July through October, closes seasonally due to snow</li>
-                                </ul>     
-                            </div>
-                        
-                            <h3>About the Trail</h3>
-                            <p id="summary" style="font-size:20px"> 
-                                Enjoy all nature has to offer in this magical landscape rife with mountain views, lakes, meadows, and wildlife! Spend a weekend camping here and enjoy activities like hiking, birdwatching, paddleboarding, and swimming. Seasonal activities include Huckleberry picking, fishing for Rainbow trout, and wildflower viewing. Pets welcome on a leash. 
-                            <p>
-                        </div>
+                    
+
+                </div>
             
         
             </div>
@@ -123,32 +106,13 @@
             <div class="flex-container" id-="maps-comments"> <!-- contains maps and comments flex boxes-->
 
                 <div class="flex-item" id="maps"> <!-- Maps integration with direction routing -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2703.2781003281475!2d-121.43415392261504!3d47.34796820580005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549a77dfcded2af3%3A0x8ae907cfe06fada0!2sMirror%20Lake%20Trail%2C%20Washington%2098068!5e0!3m2!1sen!2sus!4v1741030102442!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map Display"></iframe>
+                    <p id="alttext" style="font-size:20px"> Holding Space for Maps integration </p>
                 </div>
 
                 <br>
 
                 <div class="flex-item" id="comments"> <!-- a user can upload a comment to a location's page -->
-                    <div id="respond">
-                        <h3>Leave A Comment</h3>
-
-                        <form action="post_comment.php" method="post" id="commentform">
-                            <label for="comment_author" class="required">Your Name:</label>
-                            <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
-                            
-                            <label for="email" class="required">Your Email:</label>
-                            <input type="email" name="email" id="email" value="" tabindex="2" required="required">
-                            
-
-                            <label for="comment" class="required">Your Message:</label>
-                          
-                            <textarea name="comment" id="comment" rows="10" tabindex="4" required="required"></textarea>
-                           
-                            <input type="hidden" name="comment_post_id" value="1" id="comment_post_id" />
-                            <input name="submit" type="submit" value="Submit Comment" />
-                            
-                        </form> 
-                    </div>
+                    <p id="alttext" style="font-size:20px"> Holding Space for Comment Integration</p>
                 </div>
 
             </div>
