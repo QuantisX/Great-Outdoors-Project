@@ -5,14 +5,14 @@
     justify-content: center;
 }
 
-ul{
+#main-body ul{
     max-width: 90%; 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-li {
+#main-body li {
   
     width: 50%;
   }
@@ -23,23 +23,26 @@ body {
 }
 
 #summary-body {
-    color:#173042;
+    color:#000000;
+    background-color: rgba(163, 233, 242, 0.351);
+    border-radius: 15px;
 }
 
 h1 {
-    color: #236477;
+    color: black;
 }
 
 h2 {
-    color: #236477;
+    color: black;
 }
 
 h3 {
-    color: #236477
+    color: black;
 }
 
 img{
-    border: 15px #4a6c2f;
+    border: 5px solid #1d57439e;
+    border-radius: 15px;
 }
 
 figcaption{
@@ -57,13 +60,18 @@ figcaption{
 
 /*End of Base Styling*/
 
+#ads-sidebar {
+    background-color: rgba(163, 210, 242, 0.41);
+    border-radius: 15px;
+}
+
 .flex-container{
     display: flex;
 }
 
 .flex-item{
     /* border: 1px solid black; */
-    padding: 5px;
+    padding: 5px;  
 }
 
 .pine-logo{
@@ -87,5 +95,5 @@ figcaption{
 
 #gallery{
     height: 400px; 
-    padding-top: 30px;
+    
 }

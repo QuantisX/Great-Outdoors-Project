@@ -33,7 +33,7 @@
 .dropDown .content {
     display: none;
     position: absolute;
-    background-color: rgba(7, 50, 72, 0.412);
+    background-color: rgb(169, 199, 213);
     min-width: 100px;
     height: auto; 
     border-radius: 12px;
