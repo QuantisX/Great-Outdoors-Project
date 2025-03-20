@@ -1,0 +1,72 @@
+h1 {
+    text-align: center;
+}
+
+header {
+    height: 90px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(0, 14, 85);
+    background-color: rgba(169, 199, 213, 0.577)
+}
+
+header img{
+    width: auto;
+    height: 80px;
+    float: left;
+    border: 5px solid green;
+    border-radius: 12px;
+}
+
+
+header h1{
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: EmblemaOne;
+    padding-right: 40%;
+}
+
+@font-face {
+    font-family: EmblemaOne;
+    src: url(fonts/EmblemaOne-Regular.ttf);
+}
+
+
+body {margin: 0px;}
+
+.navBar ul{
+    list-style-type: none;
+    background-color: rgb(169, 199, 213);
+    padding-left: 20%;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navBar a{
+    color: rgb(2, 48, 48);
+    font-family: EmblemaOne;
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    display: block;
+    text-align: center;
+}
+.navBar a:hover {
+    color: rgb(211, 228, 243);
+    background-color: rgb(6, 30, 68);
+    border-radius: 12px;
+}
+
+.navBar li{
+    float: left;
+}

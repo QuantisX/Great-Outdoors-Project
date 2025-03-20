@@ -2,29 +2,16 @@
 body {
   background-color: linen;
 }
-
-h1 {
-  color: navy;
-}
-
-img{
-  width:300px;
+main img{
+  width: 300px;
   height:200px;
-  border:10px solid green;
-  color:white;
+  color:white;
   border-radius:20px;
+  vertical-align: top;
 }
 
 figcaption{
-  width: 315px;
+  width: 315px;
   text-align: left;
   margin-left: 50px;
-}
-
-.flex-container{
-
-}
-
-.flex-item{
-  
 }
