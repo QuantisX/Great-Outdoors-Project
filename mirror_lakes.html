@@ -1,33 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Welcome to the Great Outdoors!</title>
-<!-- <link rel="stylesheet" type="text/css" href="styles/branchlevel.css"> -->
-<link rel="stylesheet" type="text/css" href="styles/mirror_lakes.css">
-<script src="scripts/myscripts.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    
+    <link rel="stylesheet" href="styles/navigationBar.css">
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="styles/branchlevel.css">
+    <script src="scripts/myscripts.js"></script>
+    <title>Welcome to the Great Outdoors!</title>
+
+    <style>
+        body{
+            background-image: url(images/lakeBlur.jpg);
+        }
+        main img{
+            border:10px solid green;
+        }
+    </style>
+    <title>Welcome to the Great Outdoors!</title>
+    <!-- <link rel="stylesheet" type="text/css" href="styles/branchlevel.css"> -->
+    <link rel="stylesheet" type="text/css" href="styles/mirror_lakes.css">
+    <script src="scripts/myscripts.js"></script>
 </head>
 <body>
-
+    
 <div id="whole-body">
-    <div id="header-bar"> <!-- this divider holds two horizontal bars: top is name and logo, bottom is a row of links-->      
-        <div class="title-bar">
-            <div class="flex-item pine-logo" id="pine_logo">
-                <div>
-                    <a href="index.html"> <img src = "images/pine_tree.png" id="pine_tree" title="Pine Logo"></a>  
+    
+    <header>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <h1>Welcome to the Great Outdoors!</h1>
+    </header>
+    <nav class="navBar">     
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Permits.html" target="_blank">Permits</a></li>
+            <li><div class="dropDown">
+                <button>Locations</button>
+                <div class="content">
+                    <a href="mountain.html">Climb the Mountain</a>
+                    <a href="forest.html">Wander the Forest</a>
+                    <a href="falls.html">See the Falls</a>
+                    <a href="ferry.html">Ride the Ferry</a>
+                    <a href="mirror_lakes.html">Walk Around the Lake</a>
+                    <a href="park.html">Read in the Park</a>
                 </div>
-                <div>
-                    <h1>Great Outdoors!</h1>
-                </div>
-               
-            </div>
-
-            <div class="links-bar-item flex-item" id="links-bar"> 
-                <div class="links" >
-                    <a href="index.html" title="Home Link">Home</a>  |  <a href="Permits.html" title="Permits Link">Permits</a>  |  <a href="" title="Locations Link">Locations</a> <!-- I want this to be a drop down -->  
-                </div>
-            </div>
-        </div>
-    </div>
+            </div></li>
+            <li><a href="HikingInWashington.html" target="_blank">About Hiking</a></li>
+            <li><a href="Skylineloop.html" target="_blank">Hiking Guide</a></li>
+        </ul>
+    </nav>
 
     <div class="flex-container" id="ads-body">
         <div class="flex-item" id="ads-sidebar"> <!--this is a vertical bar containing ads in a column. sits below links bar-->
@@ -45,53 +69,53 @@
 
             <div class="flex-container" id="gallery-summary"> <!-- Horizontal Box 1; contains image gallery (static image for now) and location details-->
 
-                <div class="flex-item" id="image-gallery">
-                    <div class="slider-wrapper">
-                        <div class="slider gallery">
-                            <div id="slide-1" class="slide" style="background-image: url(images/mirror_lakes_1.jpeg);" title="Image 1"></div>
-                    
-                            <div id="slide-2" class="slide" style="background-image: url(images/mirror_lake_2.jpeg);" title="Image 2" ></div>
-                    
-                            <div id="slide-3" class="slide" style="background-image: url(images/mirror_lakes_3.jpeg);" title="Image 3"></div>
-                        </div>
-                    
-                        <div class="dots">
-                            <a href="#slide-1"></a>
-                            <a href="#slide-2"></a>
-                            <a href="#slide-3"></a>
-                        </div>
-                    </div>
-                    <div class="caption-div">
-                        <small class="caption">Use your keyboard arrow keys to navigate photos.</small>
-                    </div>
+                
+                <div class="flex-container" id="gallery-summary"> <!-- Horizontal Box 1; contains image gallery (static image for now) and location details-->
+
+                    <div class="flex-item" id="image-gallery">
+                        <div class="slider-wrapper">
+                            <div class="slider gallery">
+                                <div id="slide-1" class="slide" style="background-image: url(images/mirror_lakes_1.jpeg);" title="Image 1"></div>
                         
-                </div>
-
-                <div class="flex-item" id="summary-body"> <!-- holds location summary-->
-                    <div class="flex-item" id="mirror-title">
-                        <h2>Explore the magical Mirror Lakes!</h2>
-                    
-                        <p id="stats" style="font-size:20px"> 
-                        <h3>Statistics</h3>
-                        <div class="wrapper">
-                            <ul>
-                                <li>Coordinates: 46.7957, -121.8415</li>
-                                <li>Hike Length: 14 miles round trip</li>
-                                <li>Elevation Gain: 3,900 ft</li>
-                                <li>Highest Point: 5,400 ft</li>
-                                <li>Difficulty Rating: Hard</li>
-                                <li>Best Time: July through October, closes seasonally due to snow</li>
-                            </ul>     
+                                <div id="slide-2" class="slide" style="background-image: url(images/mirror_lake_2.jpeg);" title="Image 2" ></div>
+                        
+                                <div id="slide-3" class="slide" style="background-image: url(images/mirror_lakes_3.jpeg);" title="Image 3"></div>
+                            </div>
+                        
+                            <div class="dots">
+                                <a href="#slide-1"></a>
+                                <a href="#slide-2"></a>
+                                <a href="#slide-3"></a>
+                            </div>
                         </div>
-                    
-                        <h3>About the Trail</h3>
-                        <p id="summary" style="font-size:20px"> 
-                            Enjoy all nature has to offer in this magical landscape rife with mountain views, lakes, meadows, and wildlife! Spend a weekend camping here and enjoy activities like hiking, birdwatching, paddleboarding, and swimming. Seasonal activities include Huckleberry picking, fishing for Rainbow trout, and wildflower viewing. Pets welcome on a leash. 
-                        <p>
+                        <div class="caption-div">
+                            <small class="caption">Use your keyboard arrow keys to navigate photos.</small>
+                        </div>
+                            
                     </div>
-                    
-
-                </div>
+    
+                    <div class="flex-item" id="summary-body"> <!-- holds location summary-->
+                        <div class="flex-item" id="mirror-title">
+                            <h2>Explore the magical Mirror Lakes!</h2>
+                        
+                            <p id="stats" style="font-size:20px"> 
+                            <h3>Statistics</h3>
+                            <div class="wrapper">
+                                <ul>
+                                    <li>Coordinates: 46.7957, -121.8415</li>
+                                    <li>Hike Length: 14 miles round trip</li>
+                                    <li>Elevation Gain: 3,900 ft</li>
+                                    <li>Highest Point: 5,400 ft</li>
+                                    <li>Difficulty Rating: Hard</li>
+                                    <li>Best Time: July through October, closes seasonally due to snow</li>
+                                </ul>     
+                            </div>
+                        
+                            <h3>About the Trail</h3>
+                            <p id="summary" style="font-size:20px"> 
+                                Enjoy all nature has to offer in this magical landscape rife with mountain views, lakes, meadows, and wildlife! Spend a weekend camping here and enjoy activities like hiking, birdwatching, paddleboarding, and swimming. Seasonal activities include Huckleberry picking, fishing for Rainbow trout, and wildflower viewing. Pets welcome on a leash. 
+                            <p>
+                        </div>
             
         
             </div>

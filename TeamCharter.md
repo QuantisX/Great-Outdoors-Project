@@ -33,7 +33,7 @@ Team Charter Template (with User Stories)
         Name: Kane Freeminn 
         Strengths: Fast Learner, Critical Thinking
         Weaknesses: Overlook Small details, sometimes somewhat dum 
-        Role: Developer, UserInterface/UserExperience designer 
+        Role: Developer
     
     (Repeat for each team member)
 
